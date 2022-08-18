@@ -1,47 +1,32 @@
-class List{
-    constructor(){
-        this.data = []
-    }
+const arr = [1,2,3,4,6,8,9]
 
-    add(nome){
-        this.data.push(nome);
-        console.log(this.data);
-    }
+const newArr = arr.map(item=>item * 2)
+console.log(newArr)
+
+const test = () => {
+    return {nome: 'Isa'};
+}
+console.log(teste())
+
+function soma(a = 2, b = 3){
+    return a+b;
 }
 
-class ToList extends List{
-    constructor(){
-        super();
-        this.usuario = 'Isabella';
-    }
+console.log(soma(2))
+/*const soma = arr.reduce(function(total, next){
+    return total + next;
+})
 
-    getUsuario(){
-        console.log(this.usuario)
-    }
+console.log(soma)
 
-    static soma(a,b){
-        
-        return this.usuario;
-    }
-}
+const filter = arr.filter(function(item){
+    return item % 2 === 0;
+})
 
-//const tolist = new ToList()
+console.log(filter)
 
-//document.getElementById('novotodo').onclick = function(){
-//   tolist.add('joao');
-//    tolist.getUsuario();
-//}
+const find = arr.find(function(item){
+    return item === 3;
+})
 
-const nome = {primeiro_nome: "Lucas"};
-nome.primeiro_nome = 'joao'
-console.log(nome)
-
-function teste(x){
-    let y = 4;
-    if(x>2) {
-        y=6
-        console.log(x,y)
-    }
-}
-
-console.log(teste(10))
+console.log(find)*/
